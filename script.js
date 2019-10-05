@@ -1,7 +1,7 @@
 // Set up flaps ////////////////////////////////////////////
 speed = .2; // seconds
-beginStr = "BALTIMORE".toUpperCase().split("");
-endStr = "VANCOUVER".toUpperCase().split("");
+beginStr = "DIGLLEGOS".toUpperCase().split("");
+endStr = "CM STUDIO".toUpperCase().split("");
 // A-Z, 0-9, spaces only
 
 amountOfFlaps = (beginStr.length >= endStr.length) ? beginStr.length : endStr.length;
@@ -94,8 +94,8 @@ function flipIt(x) {
 function dontFlipIt(x) {
   flag[x] = true;
   a2[x].classList.remove("flip2");
-  a2[x].style.backgroundColor = "#3BB6eB";
-  b2[x].style.backgroundColor = "#3BB6eB";
+  a2[x].style.backgroundColor = "#000000";
+  b2[x].style.backgroundColor = "#000000";
   a1[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
   a2[x].innerHTML = char[(strCount[x] == 0) ? char.length - 1 : strCount[x] - 1];
 }
